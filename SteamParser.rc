@@ -1,0 +1,408 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBO
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Turkish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_TRK)
+#ifdef _WIN32
+LANGUAGE LANG_TURKISH, SUBLANG_DEFAULT
+#pragma code_page(1254)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+118 DIALOGEX 0, 0, 315, 110
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Steam Game Path"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Next",1001,258,89,50,14
+    PUSHBUTTON      "Cancel",1002,203,89,50,14
+    EDITTEXT        1000,14,58,286,14,ES_AUTOHSCROLL
+    LTEXT           "Don't forget to add \\ after string.",-1,14,39,110,8
+    LTEXT           "Please set your game path, it will contain folders like tf,l4d...",-1,14,15,195,8
+    LTEXT           "To continue configuration click Next",-1,187,78,114,8
+END
+
+115 DIALOGEX 0, 0, 223, 98
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Login"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Login",1,85,65,50,14
+    PUSHBUTTON      "Cancel",2,143,65,50,14
+    EDITTEXT        1003,52,22,144,14,ES_AUTOHSCROLL
+    EDITTEXT        1004,52,42,144,14,ES_AUTOHSCROLL
+    LTEXT           "Account:",-1,16,25,30,8
+    LTEXT           "Password:",-1,16,44,34,8
+    DEFPUSHBUTTON   "Set",103,28,65,50,14,BS_CENTER
+END
+
+116 DIALOGEX 0, 0, 186, 58
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Update"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",1006,"msctls_progress32",WS_BORDER | 0x1,7,37,172,14
+    EDITTEXT        1007,7,7,81,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_TRANSPARENT
+    EDITTEXT        1008,7,22,81,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_TRANSPARENT
+END
+
+117 DIALOGEX 0, 0, 315, 110
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST | WS_EX_APPWINDOW
+CAPTION "Configuration Wizard"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Next",1,258,89,50,14
+    PUSHBUTTON      "Cancel",2,201,89,50,14
+    LTEXT           "This wizard will help you to configure your steam parser game paths and game configuration files.",-1,15,13,286,24
+    LTEXT           "To begin configuration click Next",-1,204,75,104,8
+END
+
+119 DIALOGEX 0, 0, 315, 110
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST | WS_EX_APPWINDOW
+CAPTION "Configuration Wizard"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Next",1,258,89,50,14
+    PUSHBUTTON      "Cancel",2,203,89,50,14
+    LTEXT           "Now wizard will search for an autoexec.cfg file, if file is found it will give you to option to edit it manually or automatically, if not it will create and ask. This editing will help the steam parser to work correctly.",-1,15,13,286,24
+    LTEXT           "To continue configuration click Next",-1,187,78,114,8
+END
+
+120 DIALOGEX 0, 0, 315, 110
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST | WS_EX_APPWINDOW
+CAPTION "Configuration Wizard"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Next",1,258,89,50,14
+    PUSHBUTTON      "Cancel",2,203,89,50,14
+    LTEXT           "Now wizard will search for an autoexec.cfg file, if file is found it will give you to option to edit it manually or automatically. This editing will help the steam parser to work correctly.",-1,15,13,286,24
+    LTEXT           "To continue configuration click Next",-1,187,78,114,8
+    CONTROL         "Edit Automatically",1009,"Button",BS_AUTORADIOBUTTON | BS_NOTIFY,14,38,85,10
+    CONTROL         "Edit Manually",1010,"Button",BS_AUTORADIOBUTTON | BS_NOTIFY,14,55,85,10
+END
+
+121 DIALOGEX 0, 0, 315, 254
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST | WS_EX_APPWINDOW
+CAPTION "Configuration Wizard"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Next",1,258,233,50,14
+    PUSHBUTTON      "Cancel",2,203,233,50,14
+    LTEXT           "autoexec.cfg",-1,14,76,286,11
+    EDITTEXT        1011,14,26,287,48,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        1012,14,90,286,139,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "Please copy the text below, to the any place in autoexec.cfg",-1,14,13,286,11
+    EDITTEXT        IDC_EDIT_LINE_COUNT,14,233,70,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+122 DIALOGEX 0, 0, 315, 110
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST | WS_EX_APPWINDOW
+CAPTION "Configuration Wizard"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Finish",1,258,89,50,14
+    LTEXT           "You have configured your steam parser successfully, if you will uninstall the product later, don't forget to remove the text below. Have fun! Dont forget to visit www.sombrenuit.org",-1,15,13,286,26
+    LTEXT           "To finish configuration click finish",-1,196,76,105,8
+END
+
+IDD_UPDATE_FINISH DIALOGEX 0, 0, 186, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Update Info"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Restart",IDOK,26,34,50,14
+    PUSHBUTTON      "View Update News",IDCANCEL,90,34,68,14
+    CTEXT           "Update Successful",IDC_STATIC,29,16,126,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    118, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    115, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    116, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    117, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 103
+    END
+
+    119, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 103
+    END
+
+    120, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 103
+    END
+
+    121, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 247
+    END
+
+    122, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_UPDATE_FINISH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+1 VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041f04b0"
+        BEGIN
+            VALUE "CompanyName", "www.sombrenuit.org"
+            VALUE "FileDescription", "SteamParser Application"
+            VALUE "FileVersion", "1, 0, 0, 0"
+            VALUE "InternalName", "SteamParser"
+            VALUE "LegalCopyright", "Copyright (C) 2009 Deadknight"
+            VALUE "OriginalFilename", "SteamParser.exe"
+            VALUE "ProductName", "SteamParser Application"
+            VALUE "ProductVersion", "1, 0, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x41f, 1200
+    END
+END
+
+#endif    // Turkish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Sys. Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUSD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_SYS_DEFAULT
+#pragma code_page(1254)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+106 DIALOGEX 22, 17, 230, 75
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "About"
+FONT 8, "System", 0, 0, 0x0
+BEGIN
+    ICON            110,102,14,9,20,20
+    LTEXT           "SteamParser Version 1.0",-1,49,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",-1,49,20,119,8
+    DEFPUSHBUTTON   "OK",1,195,6,30,11,WS_GROUP
+    LTEXT           "Developed By Sombrenuit - Deadknight",-1,49,31,130,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+110                     ICON                    "SteamParser.ico"
+111                     ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+112 MENU 
+BEGIN
+    POPUP "SteamParserMenu"
+    BEGIN
+        MENUITEM "&About ...",                  107
+        MENUITEM "Configuration Wizard",        32776
+        MENUITEM "Login",                       32777
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       109
+        MENUITEM "SEP",                         32775
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+112 ACCELERATORS 
+BEGIN
+    "?",            107,                    ASCII,  ALT
+    "/",            107,                    ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    105                     "SteamParser"
+    108                     "Steam Parser"
+END
+
+STRINGTABLE 
+BEGIN
+    112                     "STEAMPARSER"
+END
+
+#endif    // Neutral (Sys. Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Hebrew resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HEB)
+#ifdef _WIN32
+LANGUAGE LANG_HEBREW, SUBLANG_DEFAULT
+#pragma code_page(1255)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMB\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""OXMain.rc""\r\r\n"
+    "#include ""OpenFileFinder.rc\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Hebrew resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "OXMain.rc"
+#include "OpenFileFinder.rc"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
